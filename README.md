@@ -12,8 +12,8 @@ response under 3 seconds.
 Around a minute, start to finish.
 
 ```bash
-git clone <repo-url> ai-task-bundle
-cd ai-task-bundle/solution
+git clone https://github.com/rajan-sap/plc-error-classififer.git
+cd plc-error-classififer
 py -3.11 -m venv .venv && .venv/Scripts/activate    # Windows
 # python3 -m venv .venv && source .venv/bin/activate  # macOS/Linux
 pip install -r requirements.txt
