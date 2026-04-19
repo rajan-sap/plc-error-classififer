@@ -303,7 +303,7 @@ designed; that's the gap a real LLM closes. The point of the eval isn't
 to claim "perfect", it's to show exactly which categories need a
 curated handler or live-LLM judgment next.
 
-For real production latency you'd add the LLM round-trip — typically
+For real production latency we'd add the LLM round-trip — typically
 ~2 s with Claude Haiku 4.5 or Gemini 3.1 Flash Lite, well under the 3 s
 SLA. `scripts/smoke.py` reports those live numbers.
 
