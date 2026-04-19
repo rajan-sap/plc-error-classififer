@@ -1,0 +1,11 @@
+{
+  "_comment_1": "Hand-rated quality scores for each curated suggestion in src/llm/mock.py.",
+  "_comment_2": "Rubric: 3 = Actionable (copy-paste fix works), 2 = Pointed (right area, fix needs adjustment), 1 = Misleading (wrong direction).",
+  "_comment_3": "Value is a LIST — one score per suggestion, in declaration order. List length must equal the number of suggestions in mock.py for that key.",
+
+  "iec_compilation/matiec.constant_assignment": [3, 2],
+  "code_generation/python.attribute_error":     [3, 2],
+  "c_compilation/gcc.implicit_declaration":     [3],
+  "c_compilation/gcc.undefined_reference":      [2, 2],
+  "xml_validation/xsd.missing_child_element":   [3]
+}

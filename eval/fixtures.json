@@ -1,0 +1,178 @@
+[
+  {
+    "name": "real_constant_error",
+    "expected_primary_category": "matiec.constant_assignment",
+    "expected_primary_stage": "iec_compilation",
+    "expected_primary_severity": "blocking",
+    "expected_primary_complexity": "trivial",
+    "expected_noise_count": 1
+  },
+  {
+    "name": "real_empty_project",
+    "expected_primary_category": "python.attribute_error",
+    "expected_primary_stage": "code_generation",
+    "expected_primary_severity": "blocking",
+    "expected_primary_complexity": "moderate",
+    "expected_noise_count": 1
+  },
+  {
+    "name": "syn_matiec_constant_0",
+    "expected_primary_category": "matiec.constant_assignment",
+    "expected_primary_stage": "iec_compilation",
+    "expected_primary_severity": "blocking",
+    "expected_primary_complexity": "trivial",
+    "expected_noise_count": 1
+  },
+  {
+    "name": "syn_matiec_constant_1",
+    "expected_primary_category": "matiec.constant_assignment",
+    "expected_primary_stage": "iec_compilation",
+    "expected_primary_severity": "blocking",
+    "expected_primary_complexity": "trivial",
+    "expected_noise_count": 1
+  },
+  {
+    "name": "syn_matiec_constant_2",
+    "expected_primary_category": "matiec.constant_assignment",
+    "expected_primary_stage": "iec_compilation",
+    "expected_primary_severity": "blocking",
+    "expected_primary_complexity": "trivial",
+    "expected_noise_count": 1
+  },
+  {
+    "name": "syn_matiec_constant_3",
+    "expected_primary_category": "matiec.constant_assignment",
+    "expected_primary_stage": "iec_compilation",
+    "expected_primary_severity": "blocking",
+    "expected_primary_complexity": "trivial",
+    "expected_noise_count": 1
+  },
+  {
+    "name": "syn_python_attribute_0",
+    "expected_primary_category": "python.attribute_error",
+    "expected_primary_stage": "code_generation",
+    "expected_primary_severity": "blocking",
+    "expected_primary_complexity": "moderate",
+    "expected_noise_count": 1
+  },
+  {
+    "name": "syn_python_attribute_1",
+    "expected_primary_category": "python.attribute_error",
+    "expected_primary_stage": "code_generation",
+    "expected_primary_severity": "blocking",
+    "expected_primary_complexity": "moderate",
+    "expected_noise_count": 1
+  },
+  {
+    "name": "syn_python_attribute_2",
+    "expected_primary_category": "python.attribute_error",
+    "expected_primary_stage": "code_generation",
+    "expected_primary_severity": "blocking",
+    "expected_primary_complexity": "moderate",
+    "expected_noise_count": 1
+  },
+  {
+    "name": "syn_gcc_implicit_decl_0",
+    "expected_primary_category": "gcc.implicit_declaration",
+    "expected_primary_stage": "c_compilation",
+    "expected_primary_severity": "blocking",
+    "expected_primary_complexity": "trivial",
+    "expected_noise_count": 1
+  },
+  {
+    "name": "syn_gcc_implicit_decl_1",
+    "expected_primary_category": "gcc.implicit_declaration",
+    "expected_primary_stage": "c_compilation",
+    "expected_primary_severity": "blocking",
+    "expected_primary_complexity": "trivial",
+    "expected_noise_count": 1
+  },
+  {
+    "name": "syn_gcc_implicit_decl_2",
+    "expected_primary_category": "gcc.implicit_declaration",
+    "expected_primary_stage": "c_compilation",
+    "expected_primary_severity": "blocking",
+    "expected_primary_complexity": "trivial",
+    "expected_noise_count": 1
+  },
+  {
+    "name": "syn_gcc_undefined_ref_0",
+    "expected_primary_category": "gcc.undefined_reference",
+    "expected_primary_stage": "c_compilation",
+    "expected_primary_severity": "blocking",
+    "expected_primary_complexity": "moderate",
+    "expected_noise_count": 1
+  },
+  {
+    "name": "syn_gcc_undefined_ref_1",
+    "expected_primary_category": "gcc.undefined_reference",
+    "expected_primary_stage": "c_compilation",
+    "expected_primary_severity": "blocking",
+    "expected_primary_complexity": "moderate",
+    "expected_noise_count": 1
+  },
+  {
+    "name": "syn_gcc_undefined_ref_2",
+    "expected_primary_category": "gcc.undefined_reference",
+    "expected_primary_stage": "c_compilation",
+    "expected_primary_severity": "blocking",
+    "expected_primary_complexity": "moderate",
+    "expected_noise_count": 1
+  },
+  {
+    "name": "syn_xsd_only_noise_0",
+    "expected_primary_category": "xsd.missing_child_element",
+    "expected_primary_stage": "xml_validation",
+    "expected_primary_severity": "info",
+    "expected_primary_complexity": "trivial",
+    "expected_noise_count": 1
+  },
+  {
+    "name": "syn_xsd_only_noise_1",
+    "expected_primary_category": "xsd.missing_child_element",
+    "expected_primary_stage": "xml_validation",
+    "expected_primary_severity": "info",
+    "expected_primary_complexity": "trivial",
+    "expected_noise_count": 1
+  },
+  {
+    "name": "syn_matiec_undefined_a",
+    "expected_primary_category": "matiec.undefined_symbol",
+    "expected_primary_stage": "iec_compilation",
+    "expected_primary_severity": "blocking",
+    "expected_primary_complexity": "trivial",
+    "expected_noise_count": 1
+  },
+  {
+    "name": "syn_matiec_undefined_b",
+    "expected_primary_category": "matiec.undefined_symbol",
+    "expected_primary_stage": "iec_compilation",
+    "expected_primary_severity": "blocking",
+    "expected_primary_complexity": "trivial",
+    "expected_noise_count": 1
+  },
+  {
+    "name": "syn_matiec_type_mismatch",
+    "expected_primary_category": "matiec.type_mismatch",
+    "expected_primary_stage": "iec_compilation",
+    "expected_primary_severity": "blocking",
+    "expected_primary_complexity": "moderate",
+    "expected_noise_count": 1
+  },
+  {
+    "name": "syn_gcc_syntax",
+    "expected_primary_category": "gcc.syntax_error",
+    "expected_primary_stage": "c_compilation",
+    "expected_primary_severity": "blocking",
+    "expected_primary_complexity": "trivial",
+    "expected_noise_count": 1
+  },
+  {
+    "name": "syn_gcc_missing_include",
+    "expected_primary_category": "gcc.missing_include",
+    "expected_primary_stage": "c_compilation",
+    "expected_primary_severity": "blocking",
+    "expected_primary_complexity": "trivial",
+    "expected_noise_count": 1
+  }
+]

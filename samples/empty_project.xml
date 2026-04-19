@@ -1,0 +1,46 @@
+<project xmlns="http://www.plcopen.org/xml/tc6_0201">
+  <fileHeader companyName="Unknown" productName="Unnamed" productVersion="1" creationDateTime="2023-09-14T08:06:45"/>
+  <contentHeader name="PlainProject" modificationDateTime="2023-09-14T08:09:26">
+    <coordinateInfo>
+      <fbd>
+        <scaling x="0" y="0"/>
+      </fbd>
+      <ld>
+        <scaling x="0" y="0"/>
+      </ld>
+      <sfc>
+        <scaling x="0" y="0"/>
+      </sfc>
+    </coordinateInfo>
+  </contentHeader>
+  <types>
+    <dataTypes/>
+    <pous>
+      <pou name="program0" pouType="program" globalId="b820c303-d3d8-4ec4-b9dc-ad9b0899448e">
+        <interface>
+          <localVars constant="false" retain="false" nonretain="false" persistent="false" nonpersistent="false"/>
+        </interface>
+        <body>
+          <ST>
+            <xhtml:p xmlns:xhtml="http://www.w3.org/1999/xhtml"/>
+          </ST>
+        </body>
+        <documentation/>
+      </pou>
+    </pous>
+  </types>
+  <instances>
+    <configurations>
+      <configuration name="config" globalId="1db0610b-0ca6-448d-8707-fd04476e237f">
+        <resource name="resource1">
+          <task name="task0" interval="T#20ms" priority="0">
+            <pouInstance name="instance0" typeName="program0"/>
+          </task>
+        </resource>
+      </configuration>
+    </configurations>
+  </instances>
+  <addData>
+    <data name="PROJECT_DOCS_ENSURED">true</data>
+  </addData>
+</project>

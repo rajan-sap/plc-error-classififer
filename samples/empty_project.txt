@@ -1,0 +1,54 @@
+[18:16:53]: Building project...
+[18:16:54]: Cannot build project.
+[18:16:54]: Cannot build project.
+stdout: Warning: PLC XML file doesn't follow XSD schema at line 43:
+Element '{http://www.plcopen.org/xml/tc6_0201}data': Missing child element(s). Expected is one of ( {*}*, * ).Start build in /tmp/.tmpL3UKDb/build
+Generating SoftPLC IEC-61131 ST/IL/SFC code...
+Collecting data types
+Collecting POUs
+Generate POU program0
+
+stderr: Traceback (most recent call last):
+File "/root/beremiz/Beremiz_cli.py", line 130, in <module>
+cli()
+File "/usr/local/lib/python3.10/dist-packages/click/core.py", line 1130, in __call__
+return self.main(*args, **kwargs)
+File "/usr/local/lib/python3.10/dist-packages/click/core.py", line 1055, in main
+rv = self.invoke(ctx)
+File "/usr/local/lib/python3.10/dist-packages/click/core.py", line 1689, in invoke
+return _process_result(rv)
+File "/usr/local/lib/python3.10/dist-packages/click/core.py", line 1626, in _process_result
+value = ctx.invoke(self._result_callback, value, **ctx.params)
+File "/usr/local/lib/python3.10/dist-packages/click/core.py", line 760, in invoke
+return __callback(*args, **kwargs)
+File "/usr/local/lib/python3.10/dist-packages/click/decorators.py", line 84, in new_func
+return ctx.invoke(f, obj, *args, **kwargs)
+File "/usr/local/lib/python3.10/dist-packages/click/core.py", line 760, in invoke
+return __callback(*args, **kwargs)
+File "/root/beremiz/Beremiz_cli.py", line 110, in process_pipeline
+ret = processor()
+File "/root/beremiz/Beremiz_cli.py", line 74, in processor
+return session.controller.build_project(target)
+File "/root/beremiz/CLIController.py", line 59, in func_wrapper
+return func(self, *args, **kwargs)
+File "/root/beremiz/CLIController.py", line 137, in build_project
+return 0 if self._Build() else 1
+File "/root/beremiz/ProjectController.py", line 1749, in _Build
+IECGenRes = self._Generate_SoftPLC()
+File "/root/beremiz/ProjectController.py", line 794, in _Generate_SoftPLC
+if self._Generate_PLC_ST():
+File "/root/beremiz/ProjectController.py", line 810, in _Generate_PLC_ST
+_program, errors, warnings = self.GenerateProgram(
+File "/root/beremiz/PLCControler.py", line 453, in GenerateProgram
+self.ProgramChunks = GenerateCurrentProgram(self, self.Project, errors, warnings,**kwargs)
+File "/root/beremiz/PLCGenerator.py", line 1779, in GenerateCurrentProgram
+generator.GenerateProgram(log,**kwargs)
+File "/root/beremiz/PLCGenerator.py", line 482, in GenerateProgram
+self.GeneratePouProgram(pou_name)
+File "/root/beremiz/PLCGenerator.py", line 260, in GeneratePouProgram
+program = pou_program.GenerateProgram(pou)
+File "/root/beremiz/PLCGenerator.py", line 1728, in GenerateProgram
+self.ComputeProgram(pou)
+File "/root/beremiz/PLCGenerator.py", line 959, in ComputeProgram
+self.ParentGenerator.GeneratePouProgramInText(text.upper())
+AttributeError: 'NoneType' object has no attribute 'upper'

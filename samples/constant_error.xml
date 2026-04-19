@@ -1,0 +1,70 @@
+<project xmlns="http://www.plcopen.org/xml/tc6_0201">
+  <fileHeader companyName="Unknown" productName="Unnamed" productVersion="1" creationDateTime="2023-09-14T08:06:45"/>
+  <contentHeader name="PlainProject" modificationDateTime="2023-09-14T08:09:26">
+    <coordinateInfo>
+      <fbd>
+        <scaling x="0" y="0"/>
+      </fbd>
+      <ld>
+        <scaling x="0" y="0"/>
+      </ld>
+      <sfc>
+        <scaling x="0" y="0"/>
+      </sfc>
+    </coordinateInfo>
+  </contentHeader>
+  <types>
+    <dataTypes/>
+    <pous>
+      <pou name="program0" pouType="program" globalId="53fa6da4-a809-4ea1-892b-5413ac469989">
+        <interface>
+          <localVars constant="true" retain="false" nonretain="false" persistent="false" nonpersistent="false">
+            <variable name="LocalVar0" globalId="UUID_b8f13c34-bc28-411c-9ab2-306eb932762a">
+              <type>
+                <BOOL/>
+              </type>
+              <documentation/>
+            </variable>
+            <variable name="LocalVar1" globalId="UUID_5921fee2-8062-4571-ba17-2ae95f496eef">
+              <type>
+                <BOOL/>
+              </type>
+              <documentation/>
+            </variable>
+          </localVars>
+        </interface>
+        <body>
+          <ST>
+            <xhtml:p xmlns:xhtml="http://www.w3.org/1999/xhtml">LocalVar1 := LocalVar0;</xhtml:p>
+          </ST>
+        </body>
+        <documentation/>
+      </pou>
+    </pous>
+  </types>
+  <instances>
+    <configurations>
+      <configuration name="config" globalId="06f59f42-338e-411c-8316-bbfb45c687ea">
+        <resource name="resource1">
+          <task name="task0" interval="T#20ms" priority="0">
+            <pouInstance name="instance0" typeName="program0">
+              <addData>
+                <data name="transmitterSettings">{'interval': 1000}</data>
+              </addData>
+            </pouInstance>
+          </task>
+          <globalVars constant="false" retain="false" nonretain="false" persistent="false" nonpersistent="false">
+            <addData/>
+            <documentation/>
+          </globalVars>
+          <addData>
+            <data name="transmitterSettings">{'interval': 1000}</data>
+          </addData>
+        </resource>
+      </configuration>
+    </configurations>
+  </instances>
+  <addData>
+    <data name="PROJECT_DOCS_ENSURED">true</data>
+  </addData>
+</project>

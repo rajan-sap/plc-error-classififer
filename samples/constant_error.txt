@@ -1,0 +1,22 @@
+[17:05:55]: Building project...
+[17:05:56]: Cannot build project.
+[17:05:56]: Cannot build project.
+stdout: Warning: PLC XML file doesn't follow XSD schema at line 61:
+Element '{http://www.plcopen.org/xml/tc6_0201}data': Missing child element(s). Expected is one of ( {*}*, * ).Start build in /tmp/.tmpMngQvj/build
+Generating SoftPLC IEC-61131 ST/IL/SFC code...
+Collecting data types
+Collecting POUs
+Generate POU program0
+Generate Config(s)
+Compiling IEC Program into C code...
+0.000s 0.101s 0.201s 0.301s
+"/root/beremiz/matiec/iec2c" -f -l -p -I "/root/beremiz/matiec/lib" -T "/tmp/.tmpMngQvj/build" "/tmp/.tmpMngQvj/build/plc.st"
+Warning: exited with status 1 (pid 187)
+0.342s
+Warning: /tmp/.tmpMngQvj/build/plc.st:30-4..30-12: error: Assignment to CONSTANT variables is not allowed.
+Warning: In section: PROGRAM program0
+Warning: 0030: LocalVar1 := LocalVar0;
+Warning: 1 error(s) found. Bailing out!
+Warning:
+Error: Error : IEC to C compiler returned 1
+Error: PLC code generation failed !
